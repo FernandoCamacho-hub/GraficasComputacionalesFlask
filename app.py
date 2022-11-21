@@ -5,7 +5,7 @@ import random
 app=Flask(__name__)
 
 @app.route('/')
-def hello_world():  # put application's code here
+def generate_random_positions():  # put application's code here
     puntos = []
     # loop para generar carritos internos
     for i in range(10):
