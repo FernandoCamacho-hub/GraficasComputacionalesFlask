@@ -10,9 +10,9 @@ def generate_random_positions():  # put application's code here
     # loop para generar carritos internos
     for i in range(10):
         puntos.append({"id": i,
-                       "x": random.uniform(0, 10),
-                       "y": random.uniform(0, 10),
-                       "z": random.uniform(0, 10)})
+                       "x": random.uniform(-10, 10),
+                       "y": random.uniform(0, 9),
+                       "z": random.uniform(-5, 5)})
 
         # COMO SACAR VALORES RANDOM
         with open("json_file.json", "w+") as f:
